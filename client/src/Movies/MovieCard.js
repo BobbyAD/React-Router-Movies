@@ -1,10 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const MovieCard = props => {
   return (
     <div className="movie-card">
-      <Link to={`/movies/${props.movie.id}`}>
         <h2>{props.movie.title}</h2>
         <div className="movie-director">
           Director: <em>{props.movie.director}</em>
@@ -19,7 +17,6 @@ const MovieCard = props => {
             {star}
           </div>
         ))}
-      </Link>
     </div>
   )
 };
